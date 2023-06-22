@@ -1,0 +1,88 @@
+
+<div mat-dialog-title>
+  <h1>✔ To-Do List</h1>
+</div>
+<form [formGroup]="taskForm" (ngSubmit)="onFormSubmit()">
+   <div mat-dialog-content class="content">
+  <div class="row">
+  <mat-form-field appearance="outline">
+      <mat-label>Task name</mat-label>
+      <input matInput formControlName="taskName">
+      
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Task description</mat-label>
+      <input matInput formControlName="taskDescription">
+    </mat-form-field>
+
+    
+      <mat-form-field appearance="outline">
+        <mat-label>Due date</mat-label>
+        <input matInput [matDatepicker]="myDatePicker" formControlName="dueDate">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+        <mat-datepicker #myDatePicker></mat-datepicker>
+      </mat-form-field>    
+    
+  </div>
+
+  <div>
+    <mat-radio-group aria-label="Select an option" formControlName="addPeople">
+        <mat-label><b>Would you like to add people in task ?</b></mat-label>
+        <mat-radio-button value="Yes">Yes </mat-radio-button>
+        <mat-radio-button value="No">No</mat-radio-button>
+      </mat-radio-group>
+  </div>
+
+
+  
+  
+   
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Team Leader</mat-label>
+      <mat-select formControlName="teamLeader">
+        <mat-option *ngFor ="let val of Teamleader" [value]="val">{{val}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Team Member</mat-label>
+      <mat-select formControlName="teamMember">
+        <mat-option *ngFor ="let val of TeamMember" [value]="val">{{val}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-radio-group aria-label="Select an option" formControlName="Priority">
+          <mat-label><b>Priority</b></mat-label>
+          <div>
+          <mat-radio-button value="High">High</mat-radio-button>
+          <mat-radio-button value="Medium">Medium</mat-radio-button>
+          </div>
+        </mat-radio-group>
+      </div>
+ 
+<div>
+      <mat-radio-group aria-label="Select an option" formControlName="status">
+          <mat-label><b>Status</b></mat-label>
+      <div>
+          <mat-radio-button value="To-do">To-do </mat-radio-button>
+          <mat-radio-button value="InProgress">InProgress</mat-radio-button>
+          <mat-radio-button value="Completed">Completed</mat-radio-button>
+        </div>
+        </mat-radio-group>
+    </div>
+
+</div>
+<div mat-dialog-actions class="action">
+<button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+  <button mat-raised-button   color="primary"type="submit">{{data ? 'Update':'Save'}}</button>
+ 
+</div>
+</form>
+

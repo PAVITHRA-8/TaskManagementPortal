@@ -1,0 +1,164 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "task": [
+    {
+      "taskName": "ui design",
+      "taskDescription": "create a UI for web-app",
+      "dueDate": "2023-05-16T18:30:00.000Z",
+      "Priority": "High",
+      "addPeople": "Yes",
+      "teamLeader": "Pavi",
+      "teamMember": "rohini",
+      "status": "Progress",
+      "id": 1
+    },
+    {
+      "taskName": "uml",
+      "taskDescription": "visual representation of software",
+      "dueDate": "2023-05-15T18:30:00.000Z",
+      "Priority": "High",
+      "addPeople": "Yes",
+      "teamLeader": "Pavi",
+      "teamMember": "rohini",
+      "status": "To-do",
+      "id": 2
+    },
+    {
+      "taskName": "frontend",
+      "taskDescription": "design frontend ",
+      "dueDate": "2023-05-27T18:30:00.000Z",
+      "Priority": "Medium",
+      "addPeople": "Yes",
+      "teamLeader": "Pavi",
+      "teamMember": "Pava",
+      "status": "Completed",
+      "id": 3
+    },
+    {
+      "taskName": "database",
+      "taskDescription": "create database",
+      "dueDate": "2023-06-15T18:30:00.000Z",
+      "Priority": "High",
+      "addPeople": "Yes",
+      "teamLeader": "Pavi",
+      "teamMember": "rohini",
+      "status": "To-do",
+      "id": 4
+    },
+    {
+      "taskName": "backend",
+      "taskDescription": "using springboot",
+      "dueDate": "2023-05-13T18:30:00.000Z",
+      "Priority": "Medium",
+      "addPeople": "Yes",
+      "teamLeader": "Pavi",
+      "teamMember": "Sanjay",
+      "status": "To-do",
+      "id": 5
+    },
+    {
+      "taskName": "ui design",
+      "taskDescription": "create a UI for web-app",
+      "dueDate": "2023-05-16T18:30:00.000Z",
+      "Priority": "Medium",
+      "addPeople": "Yes",
+      "teamLeader": "Pava",
+      "teamMember": "rahul",
+      "status": "Completed",
+      "id": 6
+    },
+    {
+      "taskName": "API ",
+      "taskDescription": "api connections",
+      "dueDate": "2023-07-13T18:30:00.000Z",
+      "Priority": "High",
+      "addPeople": "Yes",
+      "teamLeader": "Pava",
+      "teamMember": "Sanjay",
+      "status": "To-do",
+      "id": 8
+    },
+    {
+      "taskName": "testing",
+      "taskDescription": "test the code",
+      "dueDate": "2023-05-19T18:30:00.000Z",
+      "Priority": "High",
+      "addPeople": "Yes",
+      "teamLeader": "Pava",
+      "teamMember": "rohini",
+      "status": "Progress",
+      "id": 9
+    },
+    {
+      "taskName": "UI UX",
+      "taskDescription": "design ui ux",
+      "dueDate": "2023-08-16T18:30:00.000Z",
+      "Priority": "High",
+      "addPeople": "Yes",
+      "teamLeader": "Pava",
+      "teamMember": "rohini",
+      "status": "To-do",
+      "id": 10
+    },
+    {
+      "taskName": "java",
+      "taskDescription": "learning",
+      "dueDate": "2023-10-19T18:30:00.000Z",
+      "addPeople": "Yes",
+      "teamLeader": "Pavi",
+      "teamMember": "Sandeep",
+      "status": "Progress",
+      "Priority": "High",
+      "id": 11
+    },
+    {
+      "taskName": "angular",
+      "taskDescription": "project based learning",
+      "dueDate": "2023-12-20T18:30:00.000Z",
+      "addPeople": "Yes",
+      "teamLeader": "Pavi",
+      "teamMember": "Sandeep",
+      "status": "To-do",
+      "Priority": "High",
+      "id": 12
+    },
+    {
+      "taskName": "Springboot",
+      "taskDescription": "Learn Backend",
+      "dueDate": "2024-01-18T18:30:00.000Z",
+      "Priority": "High",
+      "addPeople": "Yes",
+      "teamLeader": "Sandeep",
+      "teamMember": "Pavi",
+      "status": "To-do",
+      "id": 13
+    },
+    {
+      "taskName": "task management portal",
+      "taskDescription": "to-do list ",
+      "dueDate": "2023-08-16T18:30:00.000Z",
+      "Priority": "High",
+      "addPeople": "Yes",
+      "teamLeader": "Sandeep",
+      "teamMember": "Sanjay",
+      "status": "To-do",
+      "id": 14
+    }
+  ]
+}
