@@ -15,7 +15,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
-import { ReactiveFormsModule } from "@angular/forms"
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
@@ -37,6 +37,7 @@ import { MatSelectModule } from '@angular/material/select';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,9 +46,7 @@ import { MatSelectModule } from '@angular/material/select';
     SidenavComponent,
     FooterComponent,
     CreateTaskComponent,
-    UserComponent,
-
-   
+    UserComponent
   ],
   imports: [
     BrowserModule,
