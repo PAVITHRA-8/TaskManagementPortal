@@ -34,6 +34,9 @@ import { FooterComponent } from './footer/footer.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
 import { MatSelectModule } from '@angular/material/select';
+import { TaskDetailsComponent } from './task-details/task-details.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { SummaryComponent } from './summary/summary.component';
 
 
 
@@ -46,7 +49,12 @@ import { MatSelectModule } from '@angular/material/select';
     SidenavComponent,
     FooterComponent,
     CreateTaskComponent,
-    UserComponent
+    UserComponent,
+    TaskDetailsComponent,
+    UserDetailsComponent,
+    SummaryComponent,
+
+   
   ],
   imports: [
     BrowserModule,
