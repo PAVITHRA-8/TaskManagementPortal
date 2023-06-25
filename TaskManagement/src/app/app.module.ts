@@ -88,11 +88,13 @@ import { SummaryComponent } from './summary/summary.component';
     MatSelectModule,
     MatOptionModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    
     
     
   ],
   providers: [userService],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
