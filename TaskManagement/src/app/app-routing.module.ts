@@ -4,13 +4,15 @@ import { TaskComponent } from './task/task.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
 
   { path:'task', component: TaskComponent},
   { path:'sidenav', component:SidenavComponent},
   {path:'create-task',component:CreateTaskComponent},
-  {path:'user',component:UserComponent}
+  {path:'user',component:UserComponent},
+  {path:'profile',component:ProfileComponent}
   
 ];
 

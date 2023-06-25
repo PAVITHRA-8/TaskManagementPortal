@@ -35,6 +35,12 @@ import { FooterComponent } from './footer/footer.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
 import { MatSelectModule } from '@angular/material/select';
+import { ProfileComponent } from './profile/profile.component';
+
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+import { userService } from './user-service.service';
 
 
 
@@ -47,6 +53,7 @@ import { MatSelectModule } from '@angular/material/select';
     FooterComponent,
     CreateTaskComponent,
     UserComponent,
+    ProfileComponent
 
    
   ],
@@ -75,11 +82,13 @@ import { MatSelectModule } from '@angular/material/select';
     MatSortModule,
     MatSnackBarModule,
     MatSelectModule,
-    MatOptionModule
+    MatOptionModule,
+    FontAwesomeModule,
+    FormsModule
     
     
   ],
-  providers: [],
+  providers: [userService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
