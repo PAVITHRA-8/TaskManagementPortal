@@ -1,58 +1,82 @@
-
-<div mat-dialog-title>
-    <h1>✔ To-Do List</h1>
-  </div>
- 
-     <div mat-dialog-content class="content">
-    <div class="row">
-    <mat-form-field appearance="outline">
-        <mat-label>Task name</mat-label>
-        <input matInput formControlName="taskName">
+<div class="container">
+  <div class="content">
+  <h2><b><i>Create new task</i></b></h2>
+  <br>
+  <form [formGroup]="formValidation" >
+      <div class="forms">
+      <!--task name-->
+          <label><b>Task Name<span class="required-indicator">*</span></b></label>
+          <br>
+          <input type="text" 
+           placeholder="Enter task name here..." 
+           class="form-control" 
+           id="taskName" 
+           formControlName="taskName" 
+           autocomplete="off"
+          >
+          <span style="color:red" *ngIf="taskName && taskName.invalid && taskName.touched">
+          Task name required!</span>
+          <pre></pre>
+    
+          <!--task description-->
+          <label><b>Description<span class="required-indicator">*</span></b></label>
+          <br>
+          <textarea placeholder="Enter task description here..." 
+           class="form-control" 
+           id="description" 
+           formControlName="taskDescription" 
+           autocomplete="off"
+          >
+          </textarea>
+          <span style="color:red" *ngIf="taskDescription && taskDescription.invalid && taskDescription.touched">
+          Task description required!</span>
+          <pre></pre>
+          <label><b>Due Date<span class="required-indicator">*</span></b></label>
+          <br>
+          <input type="date" 
+           [value]="TodayDate" 
+           [min]="minValue"
+           formControlName="dueDate" 
+          >
+          <pre></pre>
+    
+          <!--Status-->
+          <label><b>Status<span class="required-indicator">*</span></b></label>
+              <div *ngFor="let state of status">
+                 <input type="radio"
+                 name="statusOfTask"
+                 value="{{state.value}}"
+                 (change)="radioHandler(state.value)"
+                 formControlName="statusOfTask"
+                 [checked]="selectedOption"
+                 >
+                 {{state.indicator}}
+                 {{state.value}}
+              </div>
+              
+          <pre></pre>
+          
+              <div class="buttons">
+                  <button mat-raise-button class="btn btn-dark"
+                   [disabled]="formValidation.invalid"
+                   (click)="onSubmit()"
+                  >
+                  Done 
+                  </button> 
         
-      </mat-form-field>
-    </div>
-      <mat-form-field appearance="outline">
-        <mat-label>Task description</mat-label>
-        <input matInput formControlName="taskDescription">
-      </mat-form-field>
-   
-    <div class="cal">
-      <mat-form-field appearance="outline">
-        <mat-label>Due date</mat-label>
-        <input matInput [matDatepicker]="myDatePicker" formControlName="dueDate">
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
-        <mat-datepicker #myDatePicker></mat-datepicker>
-      </mat-form-field>    
-      </div>
-      <div>
-        <mat-radio-group aria-label="Select an option" formControlName="status">
-            <mat-label><b>Status</b></mat-label>
-            <div>
-            <mat-radio-button value="To-do">To-do </mat-radio-button>
-            <mat-radio-button value="Progress">Progress</mat-radio-button>
-            <mat-radio-button value="Completed">Completed</mat-radio-button>
-           </div>
-          </mat-radio-group>
-    </div>
-
-    <div>
-      <mat-radio-group aria-label="Select an option" formControlName="Priority">
-          <mat-label><b>Priority</b></mat-label>
-          <div>
-          <mat-radio-button value="High">High</mat-radio-button>
-          <mat-radio-button value="Medium">Medium</mat-radio-button>
+                  <button mat-raise-button class="btn btn-light" 
+                  style="margin-left: 30px;"
+                  (click)="onReset()"
+                  > 
+                  Reset
+                  </button>
         
-         </div>
-        </mat-radio-group>
+                  <button mat-raise-button class="btn btn-light" 
+                   style="margin-left: 30px;"
+                   (click)="onCancel()"
+                  > 
+                   Cancel 
+                  </button>
+              </div>
+              
   </div>
-  
-  
-  </div>
-  <div mat-dialog-actions class="action">
-  <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
-  <button mat-raised-button   color="primary"type="submit">Save</button>
-   
-  </div>
-  
-  

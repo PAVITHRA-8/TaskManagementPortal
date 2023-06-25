@@ -18,8 +18,9 @@
 
 <button mat-button [matMenuTriggerFor]="menu">Dashboard</button>
 <mat-menu #menu="matMenu">
-<a routerLink="/user" class="nav-link" mat-list-item><button  mat-button>UserBoard</button></a>
-<a  mat-list-item><button  mat-button>TaskBoard</button></a>
+<a routerLink="/userdetails" class="nav-link" mat-list-item><button  mat-button>UserBoard</button></a>
+<a routerLink="/taskdetails" class="nav-link" mat-list-item><button  mat-button>TaskBoard</button></a>
+<a routerLink="/summary" class="nav-link" mat-list-item><button  mat-button>Summary</button></a>
 </mat-menu>
 
       
@@ -51,7 +52,7 @@
 
 
     <a mat-list-item ><button mat-button><mat-icon>home</mat-icon>Home</button></a>
-    <a mat-list-item><button mat-button><mat-icon>account_circle</mat-icon>Profile</button></a>
+    <a routerLink="/profile" mat-list-item><button mat-button><mat-icon>account_circle</mat-icon>Profile</button></a>
     <a mat-list-item><button mat-button><mat-icon>leaderboard</mat-icon>Report</button></a>
     <a mat-list-item><button mat-button><mat-icon>event</mat-icon>Events</button></a>
     <a mat-list-item><button mat-button><mat-icon>help</mat-icon>Support</button></a>
