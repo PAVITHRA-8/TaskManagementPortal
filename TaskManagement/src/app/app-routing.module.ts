@@ -16,6 +16,9 @@ const routes: Routes = [
   { path:'sidenav', component:SidenavComponent},
   {path:'create-task',component:CreateTaskComponent},
   {path:'user',component:UserComponent},
+  {path:'userdetails',component:UserDetailsComponent},
+  {path:'taskdetails',component:TaskDetailsComponent},
+  {path:'summary',component:SummaryComponent},
   {path:'profile',component:ProfileComponent}
   
 ];
