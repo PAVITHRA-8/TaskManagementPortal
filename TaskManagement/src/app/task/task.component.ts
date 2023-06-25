@@ -1,11 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
-import { TaskAddEditComponent } from '../task-add-edit/task-add-edit.component';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatDialog } from '@angular/material/dialog';
 import { TaskService } from '../services/task.service';
 import { CoreService } from '../core/core.service';
+import { CreateTaskComponent } from '../create-task/create-task.component';
 
 @Component({
   selector: 'app-task',
@@ -43,9 +43,9 @@ constructor(
   ngOnInit(): void {
     this.getTaskList();
   }
-  
+   
   openAddEditTaskForm(){
-    const MatDialogRef= this._dialog.open(TaskAddEditComponent);
+    const MatDialogRef= this._dialog.open(CreateTaskComponent);
     MatDialogRef.afterClosed().subscribe({
       next: (val) =>{
         if(val){
@@ -90,7 +90,7 @@ constructor(
     }
 
     openEditTaskForm(data: any){
-       const dialogRef=this._dialog.open(TaskAddEditComponent, {
+       const dialogRef=this._dialog.open(CreateTaskComponent, {
         data,
       });
         dialogRef.afterClosed().subscribe({
