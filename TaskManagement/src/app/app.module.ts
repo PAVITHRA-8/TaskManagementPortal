@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { ProfileComponent } from './profile/profile.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
 
@@ -28,6 +28,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TaskComponent } from './task/task.component';
+import { TaskAddEditComponent } from './task-add-edit/task-add-edit.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
@@ -44,6 +45,7 @@ import { SummaryComponent } from './summary/summary.component';
   declarations: [
     AppComponent,
     TaskComponent,
+    TaskAddEditComponent,
     SidenavComponent,
     FooterComponent,
     CreateTaskComponent,
@@ -51,7 +53,6 @@ import { SummaryComponent } from './summary/summary.component';
     TaskDetailsComponent,
     UserDetailsComponent,
     SummaryComponent,
-    ProfileComponent
 
    
   ],
