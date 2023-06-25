@@ -15,8 +15,6 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
@@ -32,6 +30,10 @@ import { FooterComponent } from './footer/footer.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
 import { MatSelectModule } from '@angular/material/select';
+import { TaskDetailsComponent } from './task-details/task-details.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { SummaryComponent } from './summary/summary.component';
+
 
 
 
@@ -43,6 +45,9 @@ import { MatSelectModule } from '@angular/material/select';
     FooterComponent,
     CreateTaskComponent,
     UserComponent,
+    TaskDetailsComponent,
+    UserDetailsComponent,
+    SummaryComponent,
 
    
   ],
