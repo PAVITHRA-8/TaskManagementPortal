@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -33,12 +33,6 @@ import { FooterComponent } from './footer/footer.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
 import { MatSelectModule } from '@angular/material/select';
-import { ProfileComponent } from './profile/profile.component';
-
-
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FormsModule } from '@angular/forms';
-import { userService } from './user-service.service';
 import { TaskDetailsComponent } from './task-details/task-details.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { SummaryComponent } from './summary/summary.component';
@@ -54,10 +48,10 @@ import { SummaryComponent } from './summary/summary.component';
     FooterComponent,
     CreateTaskComponent,
     UserComponent,
-    ProfileComponent,
     TaskDetailsComponent,
     UserDetailsComponent,
     SummaryComponent,
+    ProfileComponent
 
    
   ],
@@ -86,13 +80,11 @@ import { SummaryComponent } from './summary/summary.component';
     MatSortModule,
     MatSnackBarModule,
     MatSelectModule,
-    MatOptionModule,
-    FontAwesomeModule,
-    FormsModule
+    MatOptionModule
     
     
   ],
-  providers: [userService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
