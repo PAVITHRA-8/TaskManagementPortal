@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 
 
 
@@ -28,12 +28,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TaskComponent } from './task/task.component';
-import { TaskAddEditComponent } from './task-add-edit/task-add-edit.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
 import { MatSelectModule } from '@angular/material/select';
+import { ProfileComponent } from './profile/profile.component';
+
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+import { userService } from './user-service.service';
 import { TaskDetailsComponent } from './task-details/task-details.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { SummaryComponent } from './summary/summary.component';
@@ -45,11 +50,11 @@ import { SummaryComponent } from './summary/summary.component';
   declarations: [
     AppComponent,
     TaskComponent,
-    TaskAddEditComponent,
     SidenavComponent,
     FooterComponent,
     CreateTaskComponent,
     UserComponent,
+    ProfileComponent,
     TaskDetailsComponent,
     UserDetailsComponent,
     SummaryComponent,
@@ -81,11 +86,13 @@ import { SummaryComponent } from './summary/summary.component';
     MatSortModule,
     MatSnackBarModule,
     MatSelectModule,
-    MatOptionModule
+    MatOptionModule,
+    FontAwesomeModule,
+    FormsModule
     
     
   ],
-  providers: [],
+  providers: [userService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
