@@ -12,6 +12,23 @@
   "dependencies": {
     "@angular/animations": "^16.1.2",
     "@angular/cdk": "^16.0.1",
+<<<<<<< HEAD
+    "@angular/common": "^16.0.0",
+    "@angular/compiler": "^16.0.0",
+    "@angular/core": "^16.0.0",
+    "@angular/forms": "^16.0.0",
+    "@angular/material": "^16.1.1",
+    "@angular/platform-browser": "^16.0.0",
+    "@angular/platform-browser-dynamic": "^16.0.0",
+    "@angular/router": "^16.0.0",
+    "@fortawesome/angular-fontawesome": "^0.12.1",
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "bootstrap": "^5.3.0",
+    "font-awesome": "^4.7.0",
+    "ngx-sweetalert2": "^0.2.7",
+=======
     "@angular/common": "^16.1.2",
     "@angular/compiler": "^16.1.2",
     "@angular/core": "^16.1.2",
@@ -20,7 +37,9 @@
     "@angular/platform-browser": "^16.1.2",
     "@angular/platform-browser-dynamic": "^16.1.2",
     "@angular/router": "^16.1.2",
+>>>>>>> main
     "rxjs": "~7.8.0",
+    "sweetalert2": "^11.7.12",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },
