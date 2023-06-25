@@ -15,10 +15,13 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -76,8 +79,7 @@ import { SummaryComponent } from './summary/summary.component';
     MatSortModule,
     MatSnackBarModule,
     MatSelectModule,
-    MatOptionModule,
-    FormsModule
+    MatOptionModule
     
     
   ],
