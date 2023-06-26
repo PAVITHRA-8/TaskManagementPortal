@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { TaskDetailsComponent } from './task-details/task-details.component';
 import { SummaryComponent } from './summary/summary.component';
+import { VerificationComponent } from './verification/verification.component';
 
 const routes: Routes = [
 
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'userdetails',component:UserDetailsComponent},
   {path:'taskdetails',component:TaskDetailsComponent},
   {path:'summary',component:SummaryComponent},
-  {path:'profile',component:ProfileComponent}
+  {path:'profile',component:ProfileComponent},
+  {path:'verification',component:VerificationComponent}
   
 ];
 
