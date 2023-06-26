@@ -34,8 +34,6 @@ import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
 import { MatSelectModule } from '@angular/material/select';
 import { ProfileComponent } from './profile/profile.component';
-
-
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { userService } from './user-service.service';
