@@ -10,8 +10,10 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { TaskDetailsComponent } from './task-details/task-details.component';
 import { SummaryComponent } from './summary/summary.component';
 import { VerificationComponent } from './verification/verification.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
+  {path:'login' ,component:LoginComponent},
   {path:'verification',component:VerificationComponent},
   { path:'task', component: TaskComponent},
   { path:'sidenav', component:SidenavComponent},

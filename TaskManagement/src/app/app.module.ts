@@ -44,6 +44,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { SummaryComponent } from './summary/summary.component';
 import { VerificationComponent } from './verification/verification.component';
 
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -59,12 +60,14 @@ import { VerificationComponent } from './verification/verification.component';
     TaskDetailsComponent,
     UserDetailsComponent,
     SummaryComponent,
-    VerificationComponent
+    VerificationComponent,
+    LoginComponent
 
-   
+
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -91,12 +94,12 @@ import { VerificationComponent } from './verification/verification.component';
     MatOptionModule,
     FormsModule,
     FontAwesomeModule
-    
-    
+
+
   ],
   providers: [userService],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-  
+export class AppModule {
+
 }
