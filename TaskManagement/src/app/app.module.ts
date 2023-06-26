@@ -35,6 +35,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
 import { MatSelectModule } from '@angular/material/select';
+import { SignupComponent } from './signup/signup.component';
 
 
 
@@ -47,6 +48,7 @@ import { MatSelectModule } from '@angular/material/select';
     FooterComponent,
     CreateTaskComponent,
     UserComponent,
+    SignupComponent,
 
    
   ],
