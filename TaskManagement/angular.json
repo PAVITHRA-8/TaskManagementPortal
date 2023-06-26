@@ -105,7 +105,11 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": false
+=======
+    "analytics": "75816bd4-35fa-45fb-ba20-090a0afa19df"
+>>>>>>> gayathridevibranch
   }
 
   

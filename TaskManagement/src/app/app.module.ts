@@ -34,13 +34,17 @@ import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
 import { MatSelectModule } from '@angular/material/select';
 import { ProfileComponent } from './profile/profile.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
+import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { userService } from './user-service.service';
 import { TaskDetailsComponent } from './task-details/task-details.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { SummaryComponent } from './summary/summary.component';
+import { VerificationComponent } from './verification/verification.component';
 
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -56,11 +60,14 @@ import { SummaryComponent } from './summary/summary.component';
     TaskDetailsComponent,
     UserDetailsComponent,
     SummaryComponent,
+    VerificationComponent,
+    LoginComponent
 
-   
+
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -85,14 +92,15 @@ import { SummaryComponent } from './summary/summary.component';
     MatSnackBarModule,
     MatSelectModule,
     MatOptionModule,
-    FontAwesomeModule,
     FormsModule,
-    
-    
-    
+    FontAwesomeModule
+
+
   ],
   providers: [userService],
   bootstrap: [AppComponent]
 
 })
-export class AppModule { }
+export class AppModule {
+
+}
