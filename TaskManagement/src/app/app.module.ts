@@ -16,7 +16,7 @@ import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
@@ -35,6 +35,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
 import { MatSelectModule } from '@angular/material/select';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -47,11 +48,13 @@ import { MatSelectModule } from '@angular/material/select';
     FooterComponent,
     CreateTaskComponent,
     UserComponent,
+    LoginComponent,
 
-   
+
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -76,8 +79,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatSnackBarModule,
     MatSelectModule,
     MatOptionModule
-    
-    
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
