@@ -59,7 +59,7 @@ import { VerificationComponent } from './verification/verification.component';
     TaskDetailsComponent,
     UserDetailsComponent,
     SummaryComponent,
-    VerificationComponent,
+    VerificationComponent
 
    
   ],

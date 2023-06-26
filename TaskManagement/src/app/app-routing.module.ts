@@ -12,7 +12,7 @@ import { SummaryComponent } from './summary/summary.component';
 import { VerificationComponent } from './verification/verification.component';
 
 const routes: Routes = [
-
+  {path:'verification',component:VerificationComponent},
   { path:'task', component: TaskComponent},
   { path:'sidenav', component:SidenavComponent},
   {path:'create-task',component:CreateTaskComponent},
@@ -20,9 +20,7 @@ const routes: Routes = [
   {path:'userdetails',component:UserDetailsComponent},
   {path:'taskdetails',component:TaskDetailsComponent},
   {path:'summary',component:SummaryComponent},
-  {path:'profile',component:ProfileComponent},
-  {path:'verification',component:VerificationComponent}
-  
+  {path:'profile',component:ProfileComponent}
 ];
 
 @NgModule({
