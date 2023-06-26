@@ -9,9 +9,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { TaskDetailsComponent } from './task-details/task-details.component';
 import { SummaryComponent } from './summary/summary.component';
+import { VerificationComponent } from './verification/verification.component';
 
 const routes: Routes = [
-
+  {path:'verification',component:VerificationComponent},
   { path:'task', component: TaskComponent},
   { path:'sidenav', component:SidenavComponent},
   {path:'create-task',component:CreateTaskComponent},
@@ -20,7 +21,6 @@ const routes: Routes = [
   {path:'taskdetails',component:TaskDetailsComponent},
   {path:'summary',component:SummaryComponent},
   {path:'profile',component:ProfileComponent}
-  
 ];
 
 @NgModule({

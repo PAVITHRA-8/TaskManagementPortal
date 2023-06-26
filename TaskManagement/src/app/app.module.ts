@@ -36,12 +36,13 @@ import { MatSelectModule } from '@angular/material/select';
 import { ProfileComponent } from './profile/profile.component';
 
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { userService } from './user-service.service';
 import { TaskDetailsComponent } from './task-details/task-details.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { SummaryComponent } from './summary/summary.component';
+import { VerificationComponent } from './verification/verification.component';
 
 
 
@@ -58,6 +59,7 @@ import { SummaryComponent } from './summary/summary.component';
     TaskDetailsComponent,
     UserDetailsComponent,
     SummaryComponent,
+    VerificationComponent
 
    
   ],
@@ -87,12 +89,14 @@ import { SummaryComponent } from './summary/summary.component';
     MatSnackBarModule,
     MatSelectModule,
     MatOptionModule,
-    FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
     
     
   ],
   providers: [userService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}
