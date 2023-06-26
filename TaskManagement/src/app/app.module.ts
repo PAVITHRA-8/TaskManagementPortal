@@ -44,6 +44,17 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { SummaryComponent } from './summary/summary.component';
 
 
+import { CalendarComponent } from './calendar/calendar.component';
+import { CUSTOM_ELEMENTS_SCHEMA }      from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FlatpickrModule } from 'angularx-flatpickr';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { DatePickerModule, MaskedDateTimeService }from '@syncfusion/ej2-angular-calendars'
+
+
+
 
 
 @NgModule({
@@ -58,6 +69,7 @@ import { SummaryComponent } from './summary/summary.component';
     TaskDetailsComponent,
     UserDetailsComponent,
     SummaryComponent,
+    CalendarComponent,
 
    
   ],
@@ -88,11 +100,18 @@ import { SummaryComponent } from './summary/summary.component';
     MatSelectModule,
     MatOptionModule,
     FontAwesomeModule,
-    FormsModule
-    
+    FormsModule,
+    NgbModalModule,
+    CommonModule,
+    DatePickerModule,
+    FlatpickrModule.forRoot(),
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory}),
     
   ],
-  providers: [userService],
-  bootstrap: [AppComponent]
+  providers: [userService,MaskedDateTimeService],
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
