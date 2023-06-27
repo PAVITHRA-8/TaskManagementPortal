@@ -15,7 +15,6 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -29,13 +28,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TaskComponent } from './task/task.component';
-import { TaskAddEditComponent } from './task-add-edit/task-add-edit.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { UserComponent } from './user/user.component';
 import { MatSelectModule } from '@angular/material/select';
 import { SignupComponent } from './signup/signup.component';
+import { ProfileComponent } from './profile/profile.component';
+
+
+import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+import { userService } from './user-service.service';
+import { TaskDetailsComponent } from './task-details/task-details.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { SummaryComponent } from './summary/summary.component';
+import { VerificationComponent } from './verification/verification.component';
+
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -43,17 +53,23 @@ import { SignupComponent } from './signup/signup.component';
   declarations: [
     AppComponent,
     TaskComponent,
-    TaskAddEditComponent,
     SidenavComponent,
     FooterComponent,
     CreateTaskComponent,
     UserComponent,
     SignupComponent,
+    ProfileComponent,
+    TaskDetailsComponent,
+    UserDetailsComponent,
+    SummaryComponent,
+    VerificationComponent,
+    LoginComponent
 
-   
+
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -77,11 +93,15 @@ import { SignupComponent } from './signup/signup.component';
     MatSortModule,
     MatSnackBarModule,
     MatSelectModule,
-    MatOptionModule
-    
-    
+    MatOptionModule,
+    FormsModule,
+    FontAwesomeModule
+
+
   ],
-  providers: [],
+  providers: [userService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

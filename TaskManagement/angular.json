@@ -26,9 +26,13 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/sweetalert2/dist/sweetalert2.min.css"
+      
+
             ],
-            "scripts": []
+            "scripts": ["node_modules/sweetalert2/dist/sweetalert2.min.js"]
           },
           "configurations": {
             "production": {
@@ -44,7 +48,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "allowedCommonJsDependencies": ["sweetalert2"]
             },
             "development": {
               "buildOptimizer": false,
@@ -89,7 +94,10 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              
+
             ],
             "scripts": []
           }
@@ -98,6 +106,14 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "b7d3b0b7-77f3-43ed-a57d-c01caf20d327"
+=======
+<<<<<<< HEAD
+    "analytics": false
+=======
+    "analytics": "75816bd4-35fa-45fb-ba20-090a0afa19df"
+>>>>>>> gayathridevibranch
+>>>>>>> main
   }
 }
