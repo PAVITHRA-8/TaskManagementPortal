@@ -11,9 +11,11 @@ import { TaskDetailsComponent } from './task-details/task-details.component';
 import { SummaryComponent } from './summary/summary.component';
 import { VerificationComponent } from './verification/verification.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {path:'login' ,component:LoginComponent},
+  {path:'signup' ,component:SignupComponent},
   {path:'verification',component:VerificationComponent},
   { path:'task', component: TaskComponent},
   { path:'sidenav', component:SidenavComponent},
